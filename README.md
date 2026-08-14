@@ -1,3 +1,18 @@
+STUDENT INFORMATION
+
+
+| Detail | INFORMATION |
+|--------|-------------|
+|**Student Name** |Sean Mironga|
+|**Student Number** |ST10245558|
+|**Group** |1|
+|**Module** |Web Development|
+|**Module Code** |WEDE5020|
+|**Project** |POE PART 1,2,3|
+|**Year** |2026
+
+WEBSITE OVERVIEW
+
 1. Organisation Overview
 BrightSpark Electrical Services (Pty) Ltd was founded in 2014 in Johannesburg. The company is an ECB-registered electrical contractor with eight Certificate of Compliance (CoC)-accredited electricians.
 
