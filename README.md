@@ -267,4 +267,19 @@ The client will review and approve wireframes and website content within the agr
 
 Ongoing maintenance will be billed at the estimated monthly rate.
 
+References
+
+Bootstrap Team. (2026). Bootstrap Documentation: Breakpoints and responsive design. Bootstrap. Bootstrap Documentation
+
+Department of Employment and Labour. (2009). Electrical Installation Regulations, 2009. Republic of South Africa. Electrical Installation Regulations PDF
+
+Department of Employment and Labour. (2025). Employment and Labour on electrical installation laws and Certificate of Compliance (CoC) requirements. South African Government. South African Government CoC notice
+
+Google. (2026). Google Analytics for websites. Google for Developers. Google Analytics for websites
+
+Google Search Central. (2026). Understanding Core Web Vitals and Google Search results. Google for Developers. Core Web Vitals
+
+Google Search Central. (2026). Understanding page experience in Google Search results. Google for Developers. Page Experience
+
+WordPress.org. (2026). Features. WordPress.org. WordPress Features
 # POE-PART-1
