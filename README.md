@@ -267,6 +267,16 @@ The client will review and approve wireframes and website content within the agr
 
 Ongoing maintenance will be billed at the estimated monthly rate.
 
+## Styling
+
+All pages share a single stylesheet, `style.css`, built around CSS custom properties defined in `:root`:
+
+- `--navy: #0B2545` — primary brand color (headers, footer, hero)
+- `--amber: #F5A623` — accent color (buttons, banner, highlights)
+- `--grey: #f5f6f8` — card backgrounds
+
+Layout uses flexbox for the nav and form, with a sticky header and a responsive `.page-image` banner on each interior page.
+
 References
 
 Bootstrap Team. (2026). Bootstrap Documentation: Breakpoints and responsive design. Bootstrap. Bootstrap Documentation
