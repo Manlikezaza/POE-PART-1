@@ -240,9 +240,12 @@ Layout uses flexbox for the nav and form, with a sticky header and a responsive 
 - *"No README document provided"* — resolved; this README now documents the project in full and is kept up to date each part.
 - *"No changelog provided"* — resolved by adding this Changelog section.
 
-### [Part 1] — 2026
-**Added**
-- Initial project proposal: organisation overview, goals/objectives, current-state analysis, proposed features, design direction, technical requirements, timeline, budget, expected benefits, and assumptions.
+Desktop view
+<img width="1901" height="985" alt="Screenshot 2026-09-18 143543" src="https://github.com/user-attachments/assets/dc7f639c-dda1-4cc7-869e-aa0243150ef0" />
+
+Mobile View
+
+<img width="478" height="913" alt="Screenshot 2026-09-18 144010" src="https://github.com/user-attachments/assets/20b4a70a-876b-47c9-9086-abdd3ee3e085" />
 
 ## References
 
