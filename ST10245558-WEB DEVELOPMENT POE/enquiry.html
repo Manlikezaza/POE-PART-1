@@ -1,71 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrightSpark Electrical Services | Get a Quote</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightSpark Electrical Services | Get a Quote</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
+  <div class="emergency-banner">⚡ 24/7 Emergency Electrical Callouts Available</div>
 
-<div class="emergency-banner">⚡ 24/7 Emergency Electrical Callouts Available</div>
+  <header>
+    <a class="logo" href="index.html" aria-label="BrightSpark Electrical home">
+      <svg class="brand-logo" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+        <title id="logoTitle">BrightSpark Electrical logo</title>
+        <circle cx="32" cy="32" r="27" fill="#0b2d4d"/>
+        <path d="M37 7 18 36h13l-5 21 19-30H32z" fill="#f5b400"/>
+        <text x="68" y="29" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#0b2d4d">BrightSpark</text>
+        <text x="68" y="47" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" fill="#f5b400">Electrical</text>
+      </svg>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html" aria-current="page">Get a Quote</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <a class="logo" href="index.html" aria-label="BrightSpark Electrical home"><svg class="brand-logo" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc"><title id="logoTitle">BrightSpark Electrical logo</title><desc id="logoDesc">A yellow lightning bolt inside a blue circle beside the BrightSpark Electrical name</desc><circle cx="32" cy="32" r="27" fill="#0b2d4d"/><path d="M37 7 18 36h13l-5 21 19-30H32z" fill="#f5b400"/><text x="68" y="29" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#0b2d4d">BrightSpark</text><text x="68" y="47" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" fill="#f5b400">Electrical</text></svg></a>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="enquiry.html">Get a Quote</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="hero">
-  <h1>Request a Free Quote</h1>
-  <p>Tell us about the job and we'll get back to you promptly.</p>
-</div>
-  <div class="page-image-wrap">
-    <img class="page-image" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=80" alt="Electrician carrying out an electrical repair" loading="eager" decoding="async">
+  <div class="hero">
+    <h1>Request a Free Quote</h1>
+    <p>Tell us about the electrical work you need and we'll help with the next steps.</p>
   </div>
 
-<section>
-  <form>
-    <label for="name">Full Name</label>
-    <input type="text" id="name" name="name" required>
+  <div class="page-image-wrap">
+    <img class="page-image" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=80"
+         alt="Electrician carrying out an electrical repair" loading="eager" decoding="async">
+  </div>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" name="phone" required>
+  <main>
+    <section>
+      <div class="card">
+        <h2>Electrical Service Enquiry</h2>
+        <p>Provide the details below. After validation, an email draft will be prepared so you can send your enquiry. A final price and availability can only be confirmed by BrightSpark after reviewing the job details.</p>
 
-    <label for="email">Email Address</label>
-    <input type="email" id="email" name="email" required>
+        <form id="enquiryForm">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" autocomplete="name" minlength="2" maxlength="80" required>
 
-    <label for="service">Service Needed</label>
-    <select id="service" name="service">
-      <option>Residential Electrical</option>
-      <option>Commercial Electrical</option>
-      <option>Light-Industrial Electrical</option>
-      <option>Compliance Certificate (CoC)</option>
-      <option>Emergency Callout</option>
-      <option>Other</option>
-    </select>
+          <label for="phone">Phone Number *</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel"
+                 pattern="[0-9+() .-]{7,20}" title="Enter a phone number containing 7 to 20 digits or phone symbols." required>
 
-    <label for="details">Job Details</label>
-    <textarea id="details" name="details" rows="5"></textarea>
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" autocomplete="email" maxlength="120" required>
 
-    <label for="photo">Upload a Photo (optional)</label>
-    <input type="file" id="photo" name="photo" accept="image/*">
+          <label for="service">Service Needed *</label>
+          <select id="service" name="service" required>
+            <option value="">Select a service</option>
+            <option>Residential Electrical</option>
+            <option>Commercial Electrical</option>
+            <option>Light-Industrial Electrical</option>
+            <option>Compliance Certificate (CoC)</option>
+            <option>Emergency Callout</option>
+            <option>Other</option>
+          </select>
 
-    <button type="submit" class="btn">Submit Enquiry</button>
-  </form>
-</section>
+          <label for="urgency">When is the service needed? *</label>
+          <select id="urgency" name="urgency" required>
+            <option value="">Select timing</option>
+            <option>As soon as possible</option>
+            <option>Within the next week</option>
+            <option>Within the next month</option>
+            <option>Flexible / just requesting information</option>
+          </select>
 
-<footer>
-  <p>BrightSpark Electrical Services (Pty) Ltd &mdash; Johannesburg, Gauteng</p>
-  <p>WhatsApp us anytime | <a href="contact.html">Contact Us</a></p>
-</footer>
+          <label for="details">Describe the job or ask about cost and availability *</label>
+          <textarea id="details" name="details" rows="6" minlength="10" maxlength="2000"
+                    placeholder="Describe the electrical work, location details (do not include sensitive information), and any questions..." required></textarea>
 
+          <label for="photo">Upload a Photo (optional)</label>
+          <input type="file" id="photo" name="photo" accept="image/*">
+          <small>If you choose a photo, attach it manually after your email application opens; mailto links cannot attach files automatically.</small>
+
+          <button type="submit" class="btn">Prepare Enquiry Email</button>
+          <p id="enquiryStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>BrightSpark Electrical Services (Pty) Ltd &mdash; Johannesburg, Gauteng</p>
+    <p>WhatsApp us anytime | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Replace this placeholder with the organisation's real email address.
+    const ENQUIRY_RECIPIENT = "REPLACE_WITH_BUSINESS_EMAIL@example.com";
+
+    document.getElementById("enquiryForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const form = this;
+      const status = document.getElementById("enquiryStatus");
+
+      if (!form.reportValidity()) return;
+
+      const data = new FormData(form);
+      const photo = document.getElementById("photo").files[0];
+      if (photo && !photo.type.startsWith("image/")) {
+        document.getElementById("photo").setCustomValidity("Please select an image file.");
+        document.getElementById("photo").reportValidity();
+        document.getElementById("photo").setCustomValidity("");
+        return;
+      }
+
+      if (ENQUIRY_RECIPIENT === "REPLACE_WITH_BUSINESS_EMAIL@example.com") {
+        status.textContent = "Form validated. Before using it, replace ENQUIRY_RECIPIENT in this file with the organisation's real email address.";
+        return;
+      }
+
+      const subject = "Electrical service enquiry: " + data.get("service");
+      const body = [
+        "BRIGHTSPARK ELECTRICAL SERVICE ENQUIRY",
+        "",
+        "Name: " + data.get("name"),
+        "Phone: " + data.get("phone"),
+        "Email: " + data.get("email"),
+        "Service requested: " + data.get("service"),
+        "Requested timing: " + data.get("urgency"),
+        "",
+        "Job details / questions about cost or availability:",
+        data.get("details"),
+        "",
+        photo ? "Photo selected: " + photo.name + " (please attach it manually to this email)." : "Photo: Not provided"
+      ].join("\\n");
+
+      status.textContent = "Your email application should open. Review the details, attach any photo if needed, and press Send.";
+      window.location.href = "mailto:" + ENQUIRY_RECIPIENT
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+    });
+  </script>
 </body>
 </html>

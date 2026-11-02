@@ -1,74 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BrightSpark Electrical Services | Contact Us</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrightSpark Electrical Services | Contact Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="enhancements.css">
 </head>
 <body>
+  <div class="emergency-banner">⚡ 24/7 Emergency Electrical Callouts Available</div>
 
-<div class="emergency-banner">⚡ 24/7 Emergency Electrical Callouts Available</div>
+  <header>
+    <a class="logo" href="index.html" aria-label="BrightSpark Electrical home">
+      <svg class="brand-logo" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle">
+        <title id="logoTitle">BrightSpark Electrical logo</title>
+        <circle cx="32" cy="32" r="27" fill="#0b2d4d"/>
+        <path d="M37 7 18 36h13l-5 21 19-30H32z" fill="#f5b400"/>
+        <text x="68" y="29" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#0b2d4d">BrightSpark</text>
+        <text x="68" y="47" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" fill="#f5b400">Electrical</text>
+      </svg>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="enquiry.html">Get a Quote</a></li>
+        <li><a href="contact.html" aria-current="page">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<header>
-  <a class="logo" href="index.html" aria-label="BrightSpark Electrical home">
-    <svg class="brand-logo" viewBox="0 0 220 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="logoTitle logoDesc">
-      <title id="logoTitle">BrightSpark Electrical logo</title>
-      <desc id="logoDesc">A yellow lightning bolt inside a blue circle beside the BrightSpark Electrical name</desc>
-      <circle cx="32" cy="32" r="27" fill="#0b2d4d"/>
-      <path d="M37 7 18 36h13l-5 21 19-30H32z" fill="#f5b400"/>
-      <text x="68" y="29" font-family="Arial,Helvetica,sans-serif" font-size="17" font-weight="700" fill="#0b2d4d">BrightSpark</text>
-      <text x="68" y="47" font-family="Arial,Helvetica,sans-serif" font-size="13" font-weight="600" fill="#f5b400">Electrical</text>
-    </svg>
-  </a>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="enquiry.html">Get a Quote</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-<div class="hero">
-  <h1>Contact Us</h1>
-  <p>Get in touch with BrightSpark Electrical Services for reliable electrical assistance.</p>
-</div>
-
-<div class="page-image-wrap">
-  <img class="page-image" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=80"
-       alt="Professional electrician at work" loading="eager" decoding="async">
-</div>
-
-<section>
-  <div class="card">
-    <h2>Get In Touch</h2>
-    <p>Whether you need a routine electrical service, compliance assistance, or an emergency callout, our team is ready to help.</p>
-    <p>📍 <strong>Location:</strong> Johannesburg, Gauteng, South Africa</p>
-    <p>💬 <strong>WhatsApp:</strong> +27 819 2833</p>
-    <p>⚡ <strong>Emergency:</strong> 24/7 Emergency Callout Line</p>
+  <div class="hero">
+    <h1>Contact Us</h1>
+    <p>Send BrightSpark Electrical Services a general message.</p>
   </div>
 
-  <div style="margin-top:1.5rem;">
-    <h2>Find Us</h2>
-    <iframe
-      src="https://www.google.com/maps?q=Johannesburg,+South+Africa&output=embed"
-      width="100%" height="300" style="border:0; border-radius:4px;"
-      allowfullscreen="" loading="lazy">
-    </iframe>
+  <div class="page-image-wrap">
+    <img class="page-image" src="https://images.unsplash.com/photo-1621905251918-48416bd8575a?auto=format&fit=crop&w=1400&q=80"
+         alt="Professional electrician at work" loading="eager" decoding="async">
   </div>
 
-  <div style="margin-top:1.5rem; text-align:center;">
-    <a href="enquiry.html" class="btn">Request a Free Quote</a>
-  </div>
-</section>
+  <main>
+    <section>
+      <div class="card">
+        <h2>Get In Touch</h2>
+        <p>Whether you have a general question or need help finding the right service, our team is ready to assist.</p>
+        <p>📍 <strong>Location:</strong> Johannesburg, Gauteng, South Africa</p>
+        <p>💬 <strong>WhatsApp:</strong> +27 819 2833</p>
+        <p>⚡ <strong>Emergency:</strong> 24/7 Emergency Callout Line</p>
+      </div>
 
-<footer>
-  <p>BrightSpark Electrical Services (Pty) Ltd &mdash; Johannesburg, Gauteng</p>
-  <p>WhatsApp us anytime | <a href="contact.html">Contact Us</a></p>
-</footer>
+      <div class="card" style="margin-top:1.5rem;">
+        <h2>Send a Message</h2>
+        <p>Complete the form. After validation, your email application will open with the message prepared for you to review and send.</p>
+        <form id="contactForm">
+          <label for="contactName">Full Name *</label>
+          <input type="text" id="contactName" name="name" autocomplete="name" minlength="2" maxlength="80" required>
 
+          <label for="contactEmail">Email Address *</label>
+          <input type="email" id="contactEmail" name="email" autocomplete="email" maxlength="120" required>
+
+          <label for="contactPhone">Phone Number</label>
+          <input type="tel" id="contactPhone" name="phone" autocomplete="tel"
+                 pattern="[0-9+() .-]{7,20}" title="Enter a phone number containing 7 to 20 digits or phone symbols.">
+
+          <label for="messageType">Type of Message *</label>
+          <select id="messageType" name="messageType" required>
+            <option value="">Select a message type</option>
+            <option>General question</option>
+            <option>Existing booking or service</option>
+            <option>Compliment or feedback</option>
+            <option>Complaint</option>
+            <option>Other</option>
+          </select>
+
+          <label for="contactMessage">Your Message *</label>
+          <textarea id="contactMessage" name="message" rows="6" minlength="10" maxlength="2000"
+                    placeholder="Type your full message here..." required></textarea>
+
+          <button type="submit" class="btn">Prepare Email</button>
+          <p id="contactStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+      <div style="margin-top:1.5rem;">
+        <h2>Find Us</h2>
+        <div id="map" class="bs-map" role="region" aria-label="Map showing BrightSpark Electrical Services in Johannesburg"></div>
+        <p class="bs-map__links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Johannesburg%2C+South+Africa" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p>
+      </div>
+      <div style="margin-top:1.5rem; text-align:center;">
+        <a href="enquiry.html" class="btn">Request a Free Quote</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>BrightSpark Electrical Services (Pty) Ltd &mdash; Johannesburg, Gauteng</p>
+    <p>WhatsApp us anytime | <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Replace this placeholder with the organisation's real email address.
+    const CONTACT_RECIPIENT = "REPLACE_WITH_BUSINESS_EMAIL@example.com";
+
+    document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
+      const form = this;
+      const status = document.getElementById("contactStatus");
+
+      if (!form.reportValidity()) return;
+      if (CONTACT_RECIPIENT === "REPLACE_WITH_BUSINESS_EMAIL@example.com") {
+        status.textContent = "Form validated. Before using it, replace CONTACT_RECIPIENT in this file with the organisation's real email address.";
+        return;
+      }
+
+      const data = new FormData(form);
+      const subject = "Website contact message: " + data.get("messageType");
+      const body = [
+        "GENERAL CONTACT MESSAGE",
+        "",
+        "Name: " + data.get("name"),
+        "Email: " + data.get("email"),
+        "Phone: " + (data.get("phone") || "Not provided"),
+        "Message type: " + data.get("messageType"),
+        "",
+        "Message:",
+        data.get("message")
+      ].join("\\n");
+
+      status.textContent = "Your email application should open. Review the message and press Send to deliver it.";
+      window.location.href = "mailto:" + CONTACT_RECIPIENT
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+    });
+  </script>
 </body>
 </html>
